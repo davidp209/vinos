@@ -1,0 +1,256 @@
+ @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.logo {
+    width: 200px;
+    padding: 20px;
+}
+.tituloLogo{
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+.enlaces{
+    /* Específico para el logo y el título */
+    text-decoration: none;
+
+}
+.titulosCards{
+    font-family: "Roboto Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.custom-menu {
+    margin-left: auto;
+    /* Coloca todo el menú hacia la derecha */
+
+    display: flex;
+    /* Para que los elementos estén en fila */
+
+    align-items: center;
+    /* Pone en linea verticalmente */
+}
+
+/** Contenedor de la imagen y el texto
+.logo-nombre {
+    display: flex;
+    /* Alinea la imagen y el texto en una fila 
+    align-items: center;
+    /* Alinea verticalmente 
+    gap: 10px;
+    /* Espaciado entre la imagen y el texto 
+}
+**/
+
+
+
+/*Hace que el menú permanezca abierto mientras el cursor esta encima.
+Cuando quitamos el cursor, el dropdown-menu desaparece automáticamente.*/
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+    /* Elimina el pequeño retraso en la animación */
+}
+
+/*configuracion barra de navegacion*/
+
+.navbar {
+
+    background-color: rgb(40, 23, 23) !important;
+}
+
+.boton-servicios {
+    color: #DAA520;
+    background-color: transparent;
+    /* Fondo transparente */
+    border: none;
+    /* Sin borde */
+    padding: 0;
+    /* Sin padding */
+    box-shadow: none;
+    /* Sin sombra */
+}
+
+.boton-servicios:hover {
+    color: white;
+    /* Color de texto blanco al pasar el ratón */
+    background-color: transparent;
+    /* Fondo transparente al pasar el ratón */
+    border: none;
+    /* Sin borde al pasar el ratón */
+    box-shadow: none;
+    /* Sin sombra al pasar el ratón */
+}
+
+.nav-link:hover {
+    color: black;
+
+}
+
+.boton-servicios {
+    color: #DAA520;
+}
+
+
+
+.color-hover:hover {
+    color: white !important;
+    /* Color de texto blanco al pasar el ratón */
+}
+
+.navbar-nav {
+
+    text-align: center;
+
+}
+
+.navbar-nav .nav-item {
+    /* Espacio a la derecha de cada botón */
+    margin-right: 16px;
+
+}
+
+
+
+
+.sin {
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    /* Para que las imágenes ocupen todo el ancho */
+    height: 500px;
+    /* Para la altura que indicamos */
+    object-fit: cover;
+    /* Recorta la imagen si es necesario, manteniendo su proporción */
+}
+
+.color-hover {
+    color: #DAA520;
+}
+
+
+.btn-primary {
+    background-color: rgb(89, 4, 2) !important;
+    /* Color dorado */
+    border-color: #B8860B !important;
+    /* Borde dorado oscuro */
+    color: white !important;
+    /* Texto en blanco */
+}
+
+.btn-primary:hover {
+    background-color: #B8860B !important;
+    /* Dorado oscuro al pasar el mouse */
+    border-color: #8B6508 !important;
+}
+
+
+
+a color-boton {
+    color: rgb(89, 4, 2);
+
+}
+
+h1 {
+    color: #DAA520;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.fondopie {
+    background-color: rgb(89, 4, 2);
+    color: white;
+    padding-top: 20px; 
+
+}
+.textoFooter{
+    color: #DAA520;
+
+}
+
+
+/*
+.carruselCatas{
+    padding: 15px;
+
+    justify-content: center;
+}
+
+*/
+.separacion {
+
+    min-height: 50px;
+}
+
+.fondoGris {
+    background-color: rgba(204, 188, 188, 0.575);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tituloViñas {
+
+    color: #8B0000;
+
+}
+
+.contenido-viñas {
+
+    padding: 40px 20px;
+    border-radius: 10px;
+
+}
+
+.separacionNosotros {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/*para cambios en tamaños a partir de */
+
+@media screen and (min-width: 768px) {
+    .personal {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .catas .card-body {
+        padding-left: 15px;
+        /* Ajusta este valor según sea necesario */
+    }
+
+    .separacionNosotros {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+
+@media screen and (min-width: 576px) {
+    .personal {
+        width: 60%;
+        margin: 10% 20% 10% 20%;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .separacionNosotros {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
